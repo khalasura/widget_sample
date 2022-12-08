@@ -34,6 +34,9 @@ class _StatefulSampleWidgetState extends State<StatefulSampleWidget> {
           case 3:
             widget.rabbit!.updateState(RabbitState.eat);
             break;
+          case 4:
+            widget.rabbit!.updateState(RabbitState.none);
+            break;
         }
         print(widget.rabbit!.state);
       });
